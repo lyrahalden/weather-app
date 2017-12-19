@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Hello from './Hello';
+import Clock from './Clock'
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
@@ -11,8 +12,13 @@ ReactDOM.render(
 );
 
 ReactDOM.render(
-    <Hello to="World" from="Lyra" />,
+    <Hello to="Ruby" from="Sapphire" />,
     document.getElementById("hello")
+);
+
+ReactDOM.render(
+    <Clock />,
+    document.getElementById("clock")
 );
 
 registerServiceWorker();
